@@ -6,7 +6,7 @@ import { BalancesModule } from './balances/balances.module';
 @Module({
   imports: [
       ConfigModule.forRoot({
-          envFilePath: './.env',
+          isGlobal: true
       }),
       ScheduleModule.forRoot(),
       BalancesModule,
