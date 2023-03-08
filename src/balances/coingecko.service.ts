@@ -2,6 +2,7 @@ import axios from 'axios';
 
 export async function getErc20TokenAddresses(): Promise<string[]> {
     const response = await axios.get('https://api.coingecko.com/api/v3/coins/list');
+    console.log(response.data)
     const erc20TokenAddresses: string[] = [];
 
     for (const coin of response.data) {
@@ -12,6 +13,6 @@ export async function getErc20TokenAddresses(): Promise<string[]> {
             }
         }
     }
-
+console.log(erc20TokenAddresses)
     return erc20TokenAddresses;
 }

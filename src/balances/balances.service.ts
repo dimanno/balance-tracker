@@ -21,14 +21,13 @@ export class BalancesService {
         balances['ETH'] = await this.web3.eth.getBalance(address);
 
         for (const tokenAddress of this.erc20TokenAddresses) {
-            const contract = new this.web3.eth.Contract([], tokenAddress);
+            const contract = new this.web3.eth.Contract(ERC20_ABI, tokenAddress);
             const balance = await contract.methods.balanceOf(address).call();
             const decimals = await contract.methods.decimals().call();
             const symbol = await contract.methods.symbol().call();
             balances[symbol] = balance / 10 ** decimals;
         }
-        console.log(balances);
+        console.log('88888', balances);
         return balances;
     }
-
 }
