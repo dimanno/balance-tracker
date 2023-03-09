@@ -50,10 +50,5 @@ $ npm run start:prod
 
 Example endpoint for get balances for particular address - http://localhost:5050/api/balance/your_address
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 
