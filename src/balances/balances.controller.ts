@@ -1,6 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import {BalancesService} from "./balances.service";
-import * as process from "process";
 
 @Controller('balance')
 export class BalancesController {
@@ -8,7 +7,6 @@ export class BalancesController {
 
     @Get(':address')
     async getBalances(@Param('address') address: string): Promise<any> {
-        console.log('controller')
         return this.balancesService.getBalances(address)
     }
 }
