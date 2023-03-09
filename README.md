@@ -3,6 +3,11 @@
 Simple web server for get and save balances
 of ERC20 tokens and the balance of Ethereum native tokens for current
 address - what tokens and how many of them are for the current address
+
+Stack:
+- Nest Js
+- web3.js API
+
 ## Installation
 
 ```bash
@@ -50,5 +55,7 @@ $ npm run start:prod
 
 Example endpoint for get balances for particular address - http://localhost:5050/api/balance/your_address
 
+## Result of work
 
+JSON file with current balances should be written to the result folder in the root directory
 
