@@ -12,7 +12,7 @@ export class BalanceJob implements OnApplicationBootstrap {
 
     constructor(private readonly balancesService: BalancesService, private readonly configService: ConfigService) {
         this.address = this.configService.get<string>('ADDRESS');
-        this.balanceFilePath = path.join(__dirname, '../..', 'balances/balances.json');
+        this.balanceFilePath = path.join(__dirname, '../..', 'result/balances.json');
     }
 
     async onApplicationBootstrap() {

@@ -37,4 +37,4 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
-/balances/balances.json
+/result/balances.json
